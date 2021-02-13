@@ -1,5 +1,6 @@
 //DOM elements
 const generateEL = document.getElementById('generate');
+function writePassword() {
 let length = parseInt (prompt("Pick the length of your password. Must be between 8 and 128 characters."))
 if (length < 8 || length > 128) {
     length = parseInt(prompt("Password must be between 8 and 128 characters"))
@@ -67,7 +68,7 @@ function getRandomSymbol() {
 }
 
 // Write password to the #password input
-function writePassword() {
+
     var password = generatePassword( hasLower, hasUpper, hasNumbers, hasSymbols, length);
     var passwordText = document.querySelector("#password");
     passwordText.value = password;
