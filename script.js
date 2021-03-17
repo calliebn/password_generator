@@ -2,7 +2,7 @@
 const generateEL = document.getElementById('generate');
 function writePassword() {
 let length = parseInt (prompt("Pick the length of your password. Must be between 8 and 128 characters."))
-if (length < 8 || length > 128) {
+if (length < 8 || length > 127) {
     length = parseInt(prompt("Password must be between 8 and 128 characters"))
 }
 const hasLower = confirm("Would you like to include lowercase letters?")
